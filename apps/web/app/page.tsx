@@ -1,23 +1,13 @@
 /**
- * RECIPRA — Root Preview Application.
- *
- * This is the root-level Vite app for previewing the project.
- * The actual member-facing app is in apps/web (Next.js).
+ * RECIPRA Web — Home Page.
  *
  * HITO 1: Technical foundation page. No commercial UI.
+ * This page identifies itself as RECIPRA Foundation/Development.
  */
-export default function App() {
+
+export default function HomePage() {
   return (
-    <div style={{
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '2rem',
-      backgroundColor: '#0a0a0f',
-      color: '#e5e7eb',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-    }}>
+    <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
       <div style={{ maxWidth: '640px', width: '100%' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
           <div style={{
@@ -30,7 +20,7 @@ export default function App() {
           </div>
           <div>
             <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#fff', margin: 0 }}>RECIPRA</h1>
-            <p style={{ fontSize: '0.625rem', color: '#6b7280', textTransform: 'uppercase' as const, letterSpacing: '0.1em', margin: 0 }}>
+            <p style={{ fontSize: '0.625rem', color: '#6b7280', textTransform: 'uppercase', letterSpacing: '0.1em', margin: 0 }}>
               Reward OS — Foundation / Development
             </p>
           </div>
@@ -40,25 +30,27 @@ export default function App() {
           background: '#111118', border: '1px solid #1e1e2a', borderRadius: '0.75rem',
           padding: '1.5rem', marginBottom: '1rem',
         }}>
-          <h2 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#fff', marginBottom: '1rem' }}>
+          <h2 style={{ fontSize: '0.875rem', fontWeight: '600', color: '#fff', marginBottom: '1rem' }}>
             HITO 1 — Bootstrap + Architecture + Foundation
           </h2>
-          <Row label="Repository" value="sae-space-ai/RECIPRA" />
-          <Row label="Architecture" value="Modular Monolith + Event-Oriented" />
-          <Row label="Database" value="PostgreSQL 17+ (RLS, Double-Entry)" />
-          <Row label="Ledger" value="Immutable, Balanced, NUMERIC(20,8)" />
-          <Row label="Events" value="Transactional Outbox (At-Least-Once)" />
-          <Row label="Web" value="Next.js 14 App Router (apps/web)" />
-          <Row label="API" value="Node.js HTTP (health/ready)" />
-          <Row label="Worker" value="Outbox Processor (skeleton)" />
-          <Row label="Status" value="READY_FOR_EXTERNAL_VERIFICATION" color="#10b981" />
+          <div style={{ display: 'grid', gap: '0.5rem' }}>
+            <Row label="Repository" value="sae-space-ai/RECIPRA" />
+            <Row label="Architecture" value="Modular Monolith + Event-Oriented" />
+            <Row label="Database" value="PostgreSQL 17+ (RLS, Double-Entry)" />
+            <Row label="Ledger" value="Immutable, Balanced, NUMERIC(20,8)" />
+            <Row label="Events" value="Transactional Outbox (At-Least-Once)" />
+            <Row label="Web" value="Next.js 14 App Router" />
+            <Row label="API" value="Node.js HTTP (health/ready)" />
+            <Row label="Worker" value="Outbox Processor (skeleton)" />
+            <Row label="Status" value="READY_FOR_EXTERNAL_VERIFICATION" color="#10b981" />
+          </div>
         </div>
 
         <div style={{
           background: '#111118', border: '1px solid #1e1e2a', borderRadius: '0.75rem',
           padding: '1.5rem', marginBottom: '1rem',
         }}>
-          <h2 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#fff', marginBottom: '0.75rem' }}>
+          <h2 style={{ fontSize: '0.875rem', fontWeight: '600', color: '#fff', marginBottom: '0.75rem' }}>
             Canonical Economic Invariant
           </h2>
           <code style={{
@@ -73,10 +65,10 @@ export default function App() {
         </div>
 
         <div style={{
-          background: '#111118', border: '1px solid rgba(127,29,29,0.2)', borderRadius: '0.75rem',
+          background: '#111118', border: '1px solid #7f1d1d33', borderRadius: '0.75rem',
           padding: '1rem',
         }}>
-          <h3 style={{ fontSize: '0.75rem', fontWeight: 600, color: '#f87171', marginBottom: '0.5rem' }}>
+          <h3 style={{ fontSize: '0.75rem', fontWeight: '600', color: '#f87171', marginBottom: '0.5rem' }}>
             Hard Prohibitions
           </h3>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.25rem', fontSize: '0.6875rem', color: '#9ca3af' }}>
@@ -89,11 +81,11 @@ export default function App() {
           </div>
         </div>
 
-        <p style={{ fontSize: '0.6875rem', color: '#4b5563', marginTop: '1.5rem', textAlign: 'center' as const }}>
-          No commercial data. No simulated production metrics. Technical foundation page.
+        <p style={{ fontSize: '0.6875rem', color: '#4b5563', marginTop: '1.5rem', textAlign: 'center' }}>
+          No commercial data. No simulated production metrics. This is a technical foundation page.
         </p>
       </div>
-    </div>
+    </main>
   );
 }
 

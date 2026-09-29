@@ -10,22 +10,20 @@
     "pnpm": ">=9.0.0"
   },
   "scripts": {
-    "build": "pnpm -r build",
-    "build:web": "pnpm --filter @recipra/web build",
-    "build:api": "pnpm --filter @recipra/api build",
-    "build:worker": "pnpm --filter @recipra/worker build",
-    "build:admin": "pnpm --filter @recipra/admin build",
-    "typecheck": "pnpm -r typecheck",
-    "lint": "pnpm -r lint",
-    "test": "pnpm -r test",
-    "test:unit": "pnpm -r test:unit",
-    "test:db": "pnpm --filter @recipra/database test",
-    "dev": "pnpm -r --parallel dev",
-    "db:migrate": "pnpm --filter @recipra/database migrate",
-    "db:seed": "pnpm --filter @recipra/database seed",
-    "clean": "pnpm -r clean"
+    "build": "vite build",
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "vite": "^8.3.1"
   }
 }
