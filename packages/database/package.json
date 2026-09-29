@@ -1,0 +1,23 @@
+{
+  "name": "@recipra/database",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/tests/**/*.test.js",
+    "test:db": "node --test dist/tests/**/*.test.js",
+    "migrate": "node dist/migrate.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@recipra/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}

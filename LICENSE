@@ -1,0 +1,43 @@
+# RECIPRA PROPRIETARY LICENSE
+
+Copyright (c) 2026 Prof. Manuel Gago Fernández. All rights reserved.
+
+## NOTICE
+
+This software and associated documentation files (the "Software") are PROPRIETARY and CONFIDENTIAL.
+
+## TERMS
+
+1. **No Redistribution.** The Software may not be copied, redistributed, sublicensed, or otherwise shared without explicit written permission from the copyright holder.
+
+2. **No Modification for Distribution.** Modifications to the Software are permitted for internal use only. Modified versions may not be distributed.
+
+3. **No Commercial Use.** The Software may not be used for commercial purposes without a separate commercial license agreement.
+
+4. **No Reverse Engineering.** Reverse engineering, decompilation, or disassembly of the Software is prohibited.
+
+5. **Ownership.** All intellectual property rights in the Software, including but not limited to:
+   - Core domain logic
+   - Economic models and invariants
+   - Database schemas
+   - Event contracts
+   - Module specifications
+   - Policy models
+   - Evidence models
+   - Architectural documentation
+   
+   remain the exclusive property of the copyright holder.
+
+6. **External Services.** Third-party service integrations (Google, GitHub, Meta, X, Stripe, OpenAI, etc.) are adapters and remain subject to their respective licenses and terms.
+
+7. **No Warranty.** THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+8. **No Liability.** IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.
+
+## CONTACT
+
+For licensing inquiries, contact the copyright holder.
+
+---
+
+RECIPRA is a codename provisional until legal clearance of brand/domain/software.

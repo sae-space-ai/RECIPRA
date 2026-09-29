@@ -1,0 +1,1 @@
+{ "name": "@recipra/admin", "version": "0.1.0", "private": true, "type": "module", "scripts": { "build": "echo 'admin shell - no build yet'", "typecheck": "echo 'admin shell - no typecheck yet'" }, "dependencies": { "@recipra/contracts": "workspace:*" } }
